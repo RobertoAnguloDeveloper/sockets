@@ -1,7 +1,7 @@
 import socket
 
 HOST = "144.22.204.157" # IP Server Address
-PORT = 9003 # Port to send requests
+PORT = 65123 # Port to send requests
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
