@@ -1,6 +1,6 @@
 import socket
 
-HOST = "10.0.0.243" # Loopback
+HOST = "127.0.0.1" # Loopback
 PORT = 65123 #Ports greater than 1023 are Listening
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -12,7 +12,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         print(f"Connection established with {addr}:")
         while True:
             data = conn.recv(1024)
-            if not data:
+            if data is None:
                 break
             
             conn.sendall(data)
