@@ -1,6 +1,6 @@
 import socket
 
-HOST = "127.0.0.1" # Loopback
+HOST = "10.0.0.243" # Loopback
 PORT = 65123 #Ports greater than 1023 are Listening
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
