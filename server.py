@@ -1,7 +1,7 @@
 import socket
 
 HOST = "127.0.0.1" # Loopback
-PORT = 8080 #Ports greater than 1023 are Listening
+PORT = 9003 #Ports greater than 1023 are Listening
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
